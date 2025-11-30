@@ -33,19 +33,20 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           {/* Main heading */}
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-            Hi, I'm Tomas Urizar
+            Tomas Urizar
           </h1>
           
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-700 mb-6 font-semibold">
-            Data Scientist & AI Engineer
+          {/* Tagline - Differentiator */}
+          <p className="text-xl md:text-2xl text-gray-700 mb-4 font-semibold">
+            Industrial Engineer & ML Engineer
+          </p>
+          <p className="text-lg md:text-xl text-blue-600 mb-6 font-medium">
+            Combining Process Optimization with Machine Learning
           </p>
           
-          {/* Short description */}
+          {/* Short description - Concise */}
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Industrial Civil Engineer with 3+ years of experience developing ML models and data-driven solutions across biotechnology, 
-            healthcare, and operations. Currently building deep learning models for medical image segmentation. 
-            Skilled in statistical analysis, process automation, and delivering solutions that optimize business performance.
+            Developing ML models and data-driven solutions across biotechnology, healthcare, and operations. 3+ years of experience in statistical analysis, process automation, and machine learning.
           </p>
           
           {/* Call-to-action buttons */}
@@ -74,13 +75,9 @@ export default function Home() {
           <div className="text-gray-700 mb-8">
             <p className="mb-3">
               My experience spans healthcare operations, water treatment facilities, and process optimization, where I've led data-driven 
-              initiatives and built automated systems that improved operational efficiency and decision-making. I've applied data science, 
-              management, and automation across diverse industries, always with a focus on translating complex data into actionable insights.
-            </p>
-            <p className="mb-3">
-              I combine technical expertise with hands-on experience in operations management and cross-functional collaboration. 
-              My approach focuses on building scalable solutions that deliver measurable business impact, from initial data analysis 
-              through to implementation and optimization.
+              initiatives and built automated systems that improved operational efficiency. I combine technical expertise with hands-on 
+              operations management experience, focusing on translating complex data into actionable insights and implementing solutions 
+              that solve real operational challenges across diverse industries.
             </p>
           </div>
           
@@ -186,9 +183,9 @@ export default function Home() {
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-900">Machine Learning & Computer Vision Engineer</h3>
                   <p className="text-blue-600 font-medium mb-1">Mirai Engineering</p>
-                  <p className="text-gray-600 text-sm">Developing medical image segmentation models using deep learning for kidney blood vessel analysis</p>
+                  <p className="text-gray-600 text-sm">Building and deploying deep learning models for medical image segmentation, focusing on kidney blood vessel analysis using PyTorch and computer vision techniques</p>
                 </div>
-                <span className="text-gray-500 text-sm font-medium whitespace-nowrap">Oct 2025 - Present</span>
+                <span className="text-gray-500 text-sm font-medium whitespace-nowrap">Oct 2024 - Present</span>
               </div>
             </div>
 
@@ -210,7 +207,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-900">Regional Operations Coordinator</h3>
                   <p className="text-blue-600 font-medium mb-1">RedSalud CCHC, Chile</p>
-                  <p className="text-gray-600 text-sm">Data-driven operational analysis and optimization across regional healthcare clinics</p>
+                  <p className="text-gray-600 text-sm">Led data-driven operational analysis and optimization initiatives across multiple regional healthcare clinics, identifying efficiency improvements and implementing process enhancements</p>
                 </div>
                 <span className="text-gray-500 text-sm font-medium whitespace-nowrap">Jun 2022 - Dec 2022</span>
               </div>
@@ -222,7 +219,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-900">Technical Supervisor</h3>
                   <p className="text-blue-600 font-medium mb-1">Crystal Lagoons, Chile</p>
-                  <p className="text-gray-600 text-sm">Oversaw 6 lagoon facilities and engineered automated Salesforce dashboards for operations optimization</p>
+                  <p className="text-gray-600 text-sm">Managed operations across 6 lagoon facilities and developed automated Salesforce dashboards that streamlined reporting and improved decision-making processes</p>
                 </div>
                 <span className="text-gray-500 text-sm font-medium whitespace-nowrap">Sep 2019 - Dec 2021</span>
               </div>
