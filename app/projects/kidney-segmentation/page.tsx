@@ -48,22 +48,30 @@ export default function KidneySegmentationProject() {
               </h1>
               
               <p className="text-lg text-gray-700 mb-6">
-                Deep learning model for precise blood vessel segmentation in kidney images using U-Net architecture and PyTorch.
+                Web-based system for automated blood vessel segmentation in kidney images. U-Net in PyTorch, ONNX for inference, FastAPI + React. Built at Mirai Engineering.
               </p>
+              <a 
+                href="https://miraiengineering.substack.com/p/automated-blood-vessel-segmentation" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm mb-6"
+              >
+                Read the full write-up (architecture, tech stack, metrics) →
+              </a>
               
               <div className="flex gap-2 flex-wrap mb-6">
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Python</span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">PyTorch</span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">U-Net</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Medical Imaging</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Computer Vision</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">ONNX</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">FastAPI</span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">React</span>
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/projects/kidney-segmentation/kidney_seg_dice_v2_img1.png"
-                alt="Kidney segmentation result showing input image, ground truth mask, and model prediction"
+                src="/projects/kidney-segmentation/segmentation-overlay-kidney.webp"
+                alt="Kidney segmentation overlay: input image with predicted vessel mask"
                 width={600}
                 height={400}
                 className="object-cover w-full h-auto"
@@ -71,6 +79,30 @@ export default function KidneySegmentationProject() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Article callout */}
+      <section className="px-4 pt-8 pb-10">
+        <div className="max-w-4xl mx-auto">
+          <a 
+            href="https://miraiengineering.substack.com/p/automated-blood-vessel-segmentation" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group flex flex-col sm:flex-row sm:items-center gap-4 rounded-lg border border-gray-200 bg-white px-6 py-5 shadow-sm hover:border-gray-300 hover:shadow-md transition-all duration-200"
+          >
+            <div className="flex-1 text-left">
+              <p className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1">Technical article</p>
+              <p className="text-base font-semibold text-gray-900 mb-0.5">Automated Blood Vessel Segmentation in Kidneys</p>
+              <p className="text-sm text-gray-600">Architecture, stack, data flow & metrics · Mirai Engineering</p>
+            </div>
+            <span className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 group-hover:text-blue-700 shrink-0">
+              Read article
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
         </div>
       </section>
 
@@ -294,34 +326,40 @@ export default function KidneySegmentationProject() {
         </div>
       </section>
 
-      {/* Dataset & Demo */}
+      {/* Video demo */}
       <section className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Dataset & Demo</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <a 
-              href="https://www.kaggle.com/c/blood-vessel-segmentation/data" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition text-center border border-gray-200 hover:border-blue-400"
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Demo</h2>
+          <p className="text-gray-600 mb-6 text-sm">
+            Short walkthrough of the web app: upload kidney images, run segmentation, and view results with adjustable mask overlay.
+          </p>
+          <div className="rounded-lg overflow-hidden shadow-lg bg-black">
+            <video
+              controls
+              className="w-full h-auto"
+              poster="/projects/kidney-segmentation/segmentation-overlay-kidney.webp"
             >
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Dataset</h3>
-              <p className="text-sm text-gray-600 mb-4">The model was trained on kidney_1_dense. You can use kidney_2 for testing the model.</p>
-              <div className="text-blue-600 font-medium text-sm">View Dataset →</div>
-            </a>
-            
-            <a 
-              href="https://huggingface.co/spaces/turizar/kidney-segmentation-dice" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition text-center border border-gray-200 hover:border-purple-400"
-            >
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Demo</h3>
-              <p className="text-sm text-gray-600 mb-4">Try the model interactively</p>
-              <div className="text-purple-600 font-medium text-sm">Open Demo →</div>
-            </a>
+              <source src="/projects/kidney-segmentation/kidney-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
+        </div>
+      </section>
+
+      {/* Dataset */}
+      <section className="py-12 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Dataset</h2>
+          <a 
+            href="https://www.kaggle.com/c/blood-vessel-segmentation/data" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-200 hover:border-blue-400 max-w-md"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Kaggle: Blood Vessel Segmentation</h3>
+            <p className="text-sm text-gray-600 mb-4">Model trained on kidney_1_dense; kidney_2 available for testing.</p>
+            <span className="text-blue-600 font-medium text-sm">View dataset →</span>
+          </a>
         </div>
       </section>
 
