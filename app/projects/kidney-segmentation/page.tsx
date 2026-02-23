@@ -104,8 +104,28 @@ export default function KidneySegmentationProject() {
         </div>
       </section>
 
+      {/* Video demo */}
+      <section className="py-12 px-4 bg-slate-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Demo</h2>
+          <p className="text-slate-600 mb-6 text-sm">
+            Short walkthrough of the web app: upload kidney images, run segmentation, and view results with adjustable mask overlay.
+          </p>
+          <div className="rounded-lg overflow-hidden shadow-lg bg-black">
+            <video
+              controls
+              className="w-full h-auto"
+              poster="/projects/kidney-segmentation/segmentation-overlay-kidney.webp"
+            >
+              <source src="/projects/kidney-segmentation/kidney-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* Tech Stack */}
-      <section className="py-10 px-4 bg-slate-50">
+      <section className="py-10 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Tech Stack</h2>
           
@@ -272,55 +292,6 @@ export default function KidneySegmentationProject() {
                 </div>
               </div>
             </div>
-            
-            {/* Visualizations */}
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-3">Visualizations</h3>
-              <p className="text-sm text-slate-600 mb-4">
-                Each visualization shows three panels: <strong>Image</strong> (original kidney scan), 
-                <strong>GT Mask</strong> (Ground Truth - manually annotated blood vessels), and <strong>Pred Mask</strong> (Predicted - model's segmentation output).
-              </p>
-              <div className="space-y-6">
-                <div className="relative rounded-lg overflow-hidden shadow-md">
-                  <Image
-                    src="/projects/kidney-segmentation/kidney_seg_dice_v2_img1.png"
-                    alt="Test example 1: Original image, ground truth mask, and predicted mask"
-                    width={800}
-                    height={500}
-                    className="object-cover w-full h-auto"
-                  />
-                </div>
-                <div className="relative rounded-lg overflow-hidden shadow-md">
-                  <Image
-                    src="/projects/kidney-segmentation/kidney_seg_dice_v2_img2.png"
-                    alt="Test example 2: Original image, ground truth mask, and predicted mask"
-                    width={800}
-                    height={500}
-                    className="object-cover w-full h-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Video demo */}
-      <section className="py-12 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">Demo</h2>
-          <p className="text-slate-600 mb-6 text-sm">
-            Short walkthrough of the web app: upload kidney images, run segmentation, and view results with adjustable mask overlay.
-          </p>
-          <div className="rounded-lg overflow-hidden shadow-lg bg-black">
-            <video
-              controls
-              className="w-full h-auto"
-              poster="/projects/kidney-segmentation/segmentation-overlay-kidney.webp"
-            >
-              <source src="/projects/kidney-segmentation/kidney-demo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
           </div>
         </div>
       </section>
