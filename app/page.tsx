@@ -247,7 +247,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Personal Projects - Can show code */}
             
-            {/* Project 1 - Kidney Blood Vessel Segmentation */}
+            {/* 1 - Kidney Blood Vessel Segmentation (most potent) */}
             <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
               <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Kidney Blood Vessel Segmentation</h3>
               <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
@@ -269,6 +269,79 @@ export default function Home() {
               </div>
             </div>
 
+            {/* 2 - AI-Powered Gas Consumption Tracker */}
+            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">AI-Powered Gas Consumption Tracker</h3>
+              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
+                Full-stack web app: upload meter photos for AI-powered readings and track consumption with analytics.
+                Built with Supabase backend and deployed on Vercel.
+              </p>
+              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Img Vision</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Supabase</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Vercel</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Web App</span>
+              </div>
+              <div className="flex gap-4 min-h-[1.75rem] items-center">
+                <a href="/projects/gas-consumption-tracker" className="text-blue-800 hover:underline text-sm font-medium transition-colors">View Details →</a>
+                <a href="https://gas-consumption-tracker-v2.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline text-sm font-medium transition-colors">Try →</a>
+              </div>
+            </div>
+
+            {/* 3 - Pow Spot */}
+            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Pow Spot</h3>
+              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
+                Mobile-first app to discover and compare ski resorts in Chile: centers, weather, maps, services, and trip planning. Try it with Expo Go.
+              </p>
+              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Expo</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">React Native</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Expo Router</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">JavaScript</span>
+              </div>
+              <div className="flex gap-4 min-h-[1.75rem] items-center flex-wrap">
+                <a href="/projects/pow-spot" className="text-blue-800 hover:underline text-sm font-medium transition-colors">
+                  View Details →
+                </a>
+              </div>
+            </div>
+
+            {/* 4 - Voice-Text Agent */}
+            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Voice-Text Agent</h3>
+              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
+                Voice and text processing agent enabling seamless bidirectional conversion
+                between speech and text with natural language understanding and intelligent processing.
+              </p>
+              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Python</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Speech Recognition</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">TTS</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Streamlit</span>
+              </div>
+              <div className="flex gap-4 min-h-[1.75rem] items-center">
+                <a href="/projects/voice-text-agent" className="text-blue-800 hover:underline text-sm font-medium transition-colors">View Details →</a>
+                <a href="https://voice-text-agent-fvnaaf3l7t7viffhzxurln.streamlit.app/" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline text-sm font-medium transition-colors">Try →</a>
+              </div>
+            </div>
+
+            {/* 5 - Tennis Court Reservation Automation */}
+            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
+              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Tennis Court Reservation Automation</h3>
+              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
+                Automated tennis court reservation system that ensures bookings are made as soon as courts become available,
+                automatically generating a reservation for the desired time slot.
+              </p>
+              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Python</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Web Scraping</span>
+                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Automation</span>
+              </div>
+              <div className="min-h-[1.75rem]" />
+            </div>
+
+            {/* 6 - Cabin Resort Website */}
             <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
               <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Cabin Resort Website</h3>
               <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
@@ -288,62 +361,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* NDA Projects - Cannot show code */}
-            
-            {/* Project 3 - Tennis Court Reservation Automation */}
-            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Tennis Court Reservation Automation</h3>
-              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
-                Automated tennis court reservation system that ensures bookings are made as soon as courts become available,
-                automatically generating a reservation for the desired time slot.
-              </p>
-              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Python</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Web Scraping</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Automation</span>
-              </div>
-              <div className="min-h-[1.75rem]" />
-            </div>
-
-            {/* Project 4 - Gas Consumption Tracker */}
-            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">AI-Powered Gas Consumption Tracker</h3>
-              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
-                Full-stack web app: upload meter photos for AI-powered readings and track consumption with analytics.
-                Built with Supabase backend and deployed on Vercel.
-              </p>
-              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Img Vision</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Supabase</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Vercel</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Web App</span>
-              </div>
-              <div className="flex gap-4 min-h-[1.75rem] items-center">
-                <a href="/projects/gas-consumption-tracker" className="text-blue-800 hover:underline text-sm font-medium transition-colors">View Details →</a>
-                <a href="https://gas-consumption-tracker-v2.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline text-sm font-medium transition-colors">Try →</a>
-              </div>
-            </div>
-
-            {/* Project 5 - Voice-Text Agent */}
-            <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Voice-Text Agent</h3>
-              <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
-                Voice and text processing agent enabling seamless bidirectional conversion
-                between speech and text with natural language understanding and intelligent processing.
-              </p>
-              <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Python</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Speech Recognition</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">TTS</span>
-                <span className="text-xs px-2 py-1 bg-slate-100 text-slate-700 rounded-md">Streamlit</span>
-              </div>
-              <div className="flex gap-4 min-h-[1.75rem] items-center">
-                <a href="/projects/voice-text-agent" className="text-blue-800 hover:underline text-sm font-medium transition-colors">View Details →</a>
-                <a href="https://voice-text-agent-fvnaaf3l7t7viffhzxurln.streamlit.app/" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline text-sm font-medium transition-colors">Try →</a>
-              </div>
-            </div>
-
-            {/* Project 6 - Portfolio Website */}
+            {/* 7 - Portfolio Website (least potent) */}
             <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-blue-800 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col group cursor-pointer">
               <h3 className="text-xl font-semibold text-slate-900 mb-2 min-h-[3rem] group-hover:text-blue-800 transition-colors">Portfolio Website</h3>
               <p className="text-slate-600 mb-4 flex-grow text-sm leading-relaxed">
