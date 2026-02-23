@@ -46,7 +46,7 @@ export default function Home() {
           
           {/* Short description - Concise */}
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Developing ML models and data-driven solutions across biotechnology, healthcare, and operations. 3+ years of experience in statistical analysis, process automation, and machine learning.
+            Developing ML models and data-driven solutions across biotechnology, healthcare, and operations. 3+ years of experience in statistical analysis, process automation, machine learning, and building web applications.
           </p>
           
           {/* Call-to-action buttons */}
@@ -78,6 +78,9 @@ export default function Home() {
               initiatives and built automated systems that improved operational efficiency. I combine technical expertise with hands-on 
               operations management experience, focusing on translating complex data into actionable insights and implementing solutions 
               that solve real operational challenges across diverse industries.
+            </p>
+            <p className="mb-3">
+              I also build web applications and data tools, from responsive sites to ML-powered apps, when the problem calls for it.
             </p>
           </div>
           
@@ -143,7 +146,7 @@ export default function Home() {
                 Software Development
               </h3>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript', 'HTML/CSS', 'Salesforce', 'Process Automation'].map((skill) => (
+                {['Git', 'JavaScript', 'HTML/CSS', 'Salesforce', 'Process Automation'].map((skill) => (
                   <span 
                     key={skill}
                     className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-medium"
@@ -195,7 +198,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-900">Working Holiday - Australia</h3>
                   <p className="text-blue-600 font-medium mb-1">Australia</p>
-                  <p className="text-gray-600 text-sm">Software development, data analysis tools, and operational roles in snowmaking and wastewater treatment</p>
+                  <p className="text-gray-600 text-sm">Developed software and data analysis tools; also held operational roles in snowmaking and wastewater treatment</p>
                 </div>
                 <span className="text-gray-500 text-sm font-medium whitespace-nowrap">Mar 2023 - Jun 2025</span>
               </div>
@@ -271,21 +274,20 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-gray-200 hover:border-t-2 hover:border-blue-500 group cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-900 mb-2 min-h-[3rem] group-hover:text-blue-600 transition-colors">Kidney Blood Vessel Segmentation</h3>
               <p className="text-gray-600 mb-4 flex-grow">
-                Medical image segmentation using deep learning with PyTorch. Implemented CNN-based training 
-                for accurate vessel detection in kidney images.
+                Web app for automated blood vessel segmentation in kidney images. U-Net in PyTorch, ONNX for inference, FastAPI + React. Dice 0.88.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
                 <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">PyTorch</span>
-                <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">Deep Learning</span>
-                <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">CNN</span>
-                <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">Python</span>
+                <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">U-Net</span>
+                <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">FastAPI</span>
+                <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">React</span>
               </div>
-              <div className="flex gap-4 min-h-[1.75rem] items-center">
+              <div className="flex gap-4 min-h-[1.75rem] items-center flex-wrap">
                 <a href="/projects/kidney-segmentation" className="text-blue-600 hover:text-blue-700 hover:underline text-sm font-medium transition-colors">
                   View Details →
                 </a>
-                <a href="https://huggingface.co/spaces/turizar/kidney-segmentation-dice" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline text-sm font-medium transition-colors">
-                  Try →
+                <a href="https://miraiengineering.substack.com/p/automated-blood-vessel-segmentation" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline text-sm font-medium transition-colors">
+                  Article →
                 </a>
               </div>
             </div>
@@ -294,8 +296,8 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-gray-200 hover:border-t-2 hover:border-blue-500 group cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-900 mb-2 min-h-[3rem] group-hover:text-blue-600 transition-colors">Cabin Resort Website</h3>
               <p className="text-gray-600 mb-4 flex-grow">
-                Developed a website for a cabin resort complex in southern Chile. Implemented responsive design 
-                and deployed using web hosting services.
+                Responsive, multi-page website for a cabin resort in southern Chile. Built with HTML, CSS, and JavaScript; 
+                deployed and maintained via web hosting.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
                 <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">HTML</span>
@@ -331,8 +333,8 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-gray-200 hover:border-t-2 hover:border-blue-500 group cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-900 mb-2 min-h-[3rem] group-hover:text-blue-600 transition-colors">AI-Powered Gas Consumption Tracker</h3>
               <p className="text-gray-600 mb-4 flex-grow">
-                Transform gas monitoring with AI-powered meter reading. Upload photos of your gas meter, 
-                get automatic readings, and track consumption with real-time analytics and cost optimization.
+                Full-stack web app: upload meter photos for AI-powered readings and track consumption with analytics. 
+                Built with Supabase backend and deployed on Vercel.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
                 <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">Img Vision</span>
@@ -377,8 +379,8 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col border border-gray-200 hover:border-t-2 hover:border-blue-500 group cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-900 mb-2 min-h-[3rem] group-hover:text-blue-600 transition-colors">Portfolio Website</h3>
               <p className="text-gray-600 mb-4 flex-grow">
-                Modern, responsive portfolio website showcasing projects, experience, and skills. Built with Next.js 
-                and TypeScript, featuring smooth animations and a clean, professional design.
+                Responsive portfolio built with Next.js, TypeScript, and Tailwind CSS. Showcases projects, experience, and skills 
+                with a clean UI; deployable to Vercel.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap min-h-[1.5rem] mt-auto">
                 <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded">Next.js</span>
