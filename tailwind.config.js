@@ -8,7 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // You can add custom colors, fonts, etc. here if needed
+      fontFamily: {
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+      },
     },
   },
   plugins: [],

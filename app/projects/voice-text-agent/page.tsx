@@ -101,38 +101,55 @@ export default function VoiceTextAgentProject() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Key Features</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">🎤</div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-slate-600 mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0V8m0 7V4m0 0h4m-4 0H8" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a3 3 0 00-3 3v6a3 3 0 006 0V5a3 3 0 00-3-3z" />
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Voice Input Processing</h3>
               <p className="text-gray-600 text-sm">
-                Capture and process voice inputs with advanced speech recognition technology, 
+                Capture and process voice inputs with advanced speech recognition technology,
                 converting spoken words into text with high accuracy.
               </p>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">📝</div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-slate-600 mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Text Processing</h3>
               <p className="text-gray-600 text-sm">
-                Intelligent text analysis and processing using natural language understanding 
+                Intelligent text analysis and processing using natural language understanding
                 to extract meaning and context from written input.
               </p>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">🤖</div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-slate-600 mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">AI-Powered Understanding</h3>
               <p className="text-gray-600 text-sm">
-                Leverage machine learning models to understand context, intent, and generate 
+                Leverage machine learning models to understand context, intent, and generate
                 intelligent responses or actions.
               </p>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-4xl mb-4">🔄</div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-slate-600 mb-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Seamless Conversion</h3>
               <p className="text-gray-600 text-sm">
-                Bidirectional conversion between voice and text formats, enabling flexible 
+                Bidirectional conversion between voice and text formats, enabling flexible
                 communication modes for different use cases.
               </p>
             </div>

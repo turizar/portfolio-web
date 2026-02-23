@@ -1,6 +1,13 @@
 // Import necessary components and styles
 import type { Metadata } from 'next'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+})
 
 // Metadata for the website (appears in browser tab and search engines)
 export const metadata: Metadata = {
@@ -15,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={plusJakarta.variable}>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   )
 }
